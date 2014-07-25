@@ -1,0 +1,3 @@
+[submodule "app/imports/greyscale"]
+	path = app/imports/greyscale
+	url = https://github.com/hungryinc/greyscale.git
