@@ -4,6 +4,8 @@ var argv = require('yargs').argv;
 var express = require('express');
 var app = express();
 
+// W3LUyyY5JLJm
+
 app.set('views', __dirname + '/app/release/');
 app.engine('html', require('ejs').renderFile);
 app.use(express.bodyParser());
@@ -44,6 +46,6 @@ app.use(function(err, req, res, next) {
 /**
  * Start server
  */
-app.listen(8004, function() {
+app.listen(process.env.NODE_PORT || 8004, function() {
     console.log('Server started on port %d', process.env.NODE_PORT || 8004);
 });
