@@ -4,8 +4,6 @@ var argv = require('yargs').argv;
 var express = require('express');
 var app = express();
 
-// W3LUyyY5JLJm
-
 app.set('views', __dirname + '/app/release/');
 app.engine('html', require('ejs').renderFile);
 app.use(express.bodyParser());
