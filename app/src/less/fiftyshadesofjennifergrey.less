@@ -6,11 +6,12 @@ body {
 }
 
 .container {
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
     max-width: 100%;
     position: 0;
     margin: 0;
+    padding-bottom: 40px;
 
     .container-shades {
         width: 140%;
@@ -40,6 +41,65 @@ body {
     &:nth-of-type(10) { background: rgb(100, 100, 100); }
     &:nth-of-type(11) { background: rgb(50, 50, 50); }
     &:nth-of-type(12) { background: rgb(120, 120, 120); }
+    &:nth-of-type(13) { background: rgb(100, 100, 100); }
+    &:nth-of-type(14) { background: rgb(50, 50, 50); }
+    &:nth-of-type(15) { background: rgb(120, 120, 120); }
+    &:nth-of-type(16) { background: rgb(100, 100, 100); }
+    &:nth-of-type(17) { background: rgb(50, 50, 50); }
+    &:nth-of-type(18) { background: rgb(120, 120, 120); }
+    &:nth-of-type(19) { background: rgb(100, 100, 100); }
+    &:nth-of-type(20) { background: rgb(50, 50, 50); }
+    &:nth-of-type(21) { background: rgb(120, 120, 120); }
+    &:nth-of-type(22) { background: rgb(100, 100, 100); }
+    &:nth-of-type(23) { background: rgb(100, 100, 100); }
+    &:nth-of-type(24) { background: rgb(50, 50, 50); }
+    &:nth-of-type(25) { background: rgb(120, 120, 120); }
+    &:nth-of-type(26) { background: rgb(100, 100, 100); }
+    &:nth-of-type(27) { background: rgb(50, 50, 50); }
+    &:nth-of-type(28) { background: rgb(120, 120, 120); }
+    &:nth-of-type(29) { background: rgb(100, 100, 100); }
+    &:nth-of-type(30) { background: rgb(50, 50, 50); }
+    &:nth-of-type(31) { background: rgb(120, 120, 120); }
+    &:nth-of-type(32) { background: rgb(100, 100, 100); }
+    &:nth-of-type(33) { background: rgb(100, 100, 100); }
+    &:nth-of-type(34) { background: rgb(50, 50, 50); }
+    &:nth-of-type(35) { background: rgb(120, 120, 120); }
+    &:nth-of-type(36) { background: rgb(100, 100, 100); }
+    &:nth-of-type(37) { background: rgb(50, 50, 50); }
+    &:nth-of-type(38) { background: rgb(120, 120, 120); }
+    &:nth-of-type(39) { background: rgb(100, 100, 100); }
+    &:nth-of-type(40) { background: rgb(50, 50, 50); }
+    &:nth-of-type(41) { background: rgb(120, 120, 120); }
+    &:nth-of-type(42) { background: rgb(100, 100, 100); }
+    &:nth-of-type(43) { background: rgb(100, 100, 100); }
+    &:nth-of-type(44) { background: rgb(50, 50, 50); }
+    &:nth-of-type(45) { background: rgb(120, 120, 120); }
+    &:nth-of-type(46) { background: rgb(100, 100, 100); }
+    &:nth-of-type(47) { background: rgb(50, 50, 50); }
+    &:nth-of-type(48) { background: rgb(120, 120, 120); }
+    &:nth-of-type(49) { background: rgb(100, 100, 100); }
+    &:nth-of-type(50) { background: rgb(50, 50, 50); }
+
+    &:after {
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+
+        background-image:radial-gradient(
+          circle,
+          rgba(100, 100, 100, .5) 30%,
+          transparent 0
+          );  
+        background-size: 4px 4px;
+    }
+
+    &:hover:after {
+        display: none;
+    }
 
     img,
     .quote {
@@ -60,7 +120,8 @@ body {
             display: inline-block;
 
             .twitter-share-button {
-                margin-top: 20px;
+                margin: 20px auto 0;
+                display: block;
             }
         }
 
@@ -91,5 +152,7 @@ footer {
     color: #fff;
     width: 100%;
     height: auto;
-    background: grey;
+    background: #000;
+    line-height: 0;
+    text-align: right;
 }
