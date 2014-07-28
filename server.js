@@ -46,6 +46,6 @@ app.use(function(err, req, res, next) {
 /**
  * Start server
  */
-app.listen(process.env.NODE_PORT || 8004, function() {
-    console.log('Server started on port %d', process.env.NODE_PORT || 8004);
+app.listen(80, function() {
+    console.log('Server started on port %d', 80);
 });
